@@ -24,23 +24,33 @@ html, body {
     grid-column: 3;
     grid-row: 2;
 }
+.right-up > article{
+    margin: 10px;
+}
+.right-down > article{
+    margin: 10px;
+}
+.left > article{
+    text-align: right;
+    margin: 10px;
+}
 .right-down {
     background-color: burlywood;
     grid-column: 3;
     grid-row: 3;
 }
 .top {
+    padding: 10px; /* Поля вокруг текста */
     background-color: lightblue;
     grid-column: 1/4;
     grid-row: 1;
 }
 .bottom-right {
-    grid-area: header;
     background-color: lightblue;
     grid-column: 2/4;
     grid-row: 4;
 }
-.menu-center {
+.main-menu {
     display: grid;
     grid-template-columns: 0.4fr 0.4fr 0.4fr;
     display: flex;
@@ -58,7 +68,7 @@ html, body {
     font-size: 16px;
     padding-left: 15px;
 }
-.menu-list > div:hover{
+.nav > div:hover{
     background-color: crimson;
 
 }
@@ -70,31 +80,38 @@ html, body {
 
 
 }
-.top>h5{
+
+.top>header{
     width: 20%;
     font-size: 16px;
     border: 1px solid black;
     background-color: white;
-    text-align: center;
-    margin: 5px;
+    text-align: right;
+    margin: 10px;
+    padding-right: 10px;
 }
-.top>div{
+.top>article{
     width: 90%;
     text-align: right;
+    margin-right: 10px;
 }
-.bottom-right>h5{
+.bottom-right>header{
     width: 20%;
     font-size: 16px;
     border: 1px solid black;
     background-color: white;
-    text-align: center;
-    margin: 5px;
+    text-align: right;
+    margin: 10px;
+    padding-right: 10px;
+
+
 }
-.bottom-right>div{
+.bottom-right>footer{
     width: 90%;
     text-align: right;
+    margin: 10px;
 }
-.top, .left, .right-up, .right-down, .menu-center, .bottom-right{
+.top, .left, .right-up, .right-down, .nav, .bottom-right{
     display: flex;
     align-items: center;
 }
